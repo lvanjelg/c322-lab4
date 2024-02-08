@@ -35,7 +35,7 @@
             let table = document.getElementById("searchResult");
             table.innerHTML = "";
             for(let duck of ducks){
-                if(!duckType || duck.type == duckType){
+                if(!duckType || duck.type.toLowerCase() == duckType.toLowerCase()){
                     let row = document.createElement("tr");
                     let cell1 = document.createElement("td");
                     let cell2 = document.createElement("td");
