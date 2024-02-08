@@ -20,6 +20,9 @@
            let duckType = duckTypeNode.value;
            let duck = {id: duckId, type: duckType}
            alert("You entered: " + JSON.stringify(duck));
+
+           let duckImageNode = document.getElementByID("duckImage");
+           alert("The image: " + duckImageNode.files[0].name + ", size = " + duckImageNode.files[0].size);
         }
     </script>
 
